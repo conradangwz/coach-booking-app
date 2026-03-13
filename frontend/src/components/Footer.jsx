@@ -8,7 +8,7 @@ const Footer = () => {
                 {/*Left */}
                 <div className='flex flex-col md:flex-row items-start md:items-center gap-4'>
                     <img className='mb-0 w-40 flex-shrink-0' src={assets.logo} alt="Logo" />
-                    <p className='w-full md:w-2/3 text-gray-800 leading-6'>Rally is a coach booking app by Table Tennis players for table tennis players, find your coach today and elevate your game.</p>
+                    <p className='w-full md:w-2/3 text-gray-800 leading-6'>Rally is a coach booking app by Table Tennis players for Table Tennis players, find your coach today and elevate your game.</p>
                 </div>
 
                 {/*Center */}
