@@ -60,27 +60,27 @@ export const assets = {
 
 export const specialityData = [
     {
-        speciality: 'Youth Table Tennis Coach',
+        speciality: 'Youth Coach',
         image: Youth_Table_Tennis_Coach
     },
     {
-        speciality: 'Elite Performance Coach',
+        speciality: 'Elite Coach',
         image: Elite_Performance_Coach
     },
     {
-        speciality: 'Defensive Specialist Coach',
-        image: Defensive_Specialist_Coach
+        speciality: 'Offensive Coach',
+        image: Offensive_Power_Coach
     },
     {
-        speciality: 'Offensive Power Coach',
-        image: Offensive_Power_Coach
+        speciality: 'Defensive Coach',
+        image: Defensive_Specialist_Coach
     },
     {
         speciality: 'All-Round Coach',
         image: All_Round_Coach
     },
     {
-        speciality: 'Tactical Strategy Coach',
+        speciality: 'Tactical Coach',
         image: Tactical_Strategy_Coach
     },
 ];

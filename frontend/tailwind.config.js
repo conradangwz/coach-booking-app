@@ -7,8 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': "#bd561a",
-        'background': "#050505",
+        'primary': "#c1121f",
+        'secondary': "#003049",
+        'background': "#fdf0d5",
+        'accent': "#780000",
+        'alt': "#669bbc"
+      },
+      gridTemplateColumns: {
+        'auto': 'repeat(auto-fit, minmax(200px, 1fr))',
       },
     },
   },

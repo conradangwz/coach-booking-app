@@ -10,7 +10,7 @@ const Navbar = () => {
     const [token, setToken] = useState(true);
 
     return (
-        <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
+        <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400 cursor-pointer'>
             <img className='w-24 h-22 cursor-pointer' src={assets.logo} alt="Logo" />
             <ul className='hidden md:flex items-start gap-5 font-medium'>
                 <NavLink to='/'>
@@ -36,7 +36,7 @@ const Navbar = () => {
                         ? <div className='flex items-center gap-2 cursor-pointer group relative'>
                             <img onClick={() => setShowMenu(!showMenu)} className='w-14 rounded-full' src={assets.profile_pic} alt="Profile" />
                             <img onClick={() => setShowMenu(!showMenu)} className='w-4' src={assets.dropdown_icon} alt="Menu" />
-                            <div className='absolute top-12 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
+                            <div className='absolute top-12 right-0 pt-14 text-base font-medium text-secondary z-20 hidden group-hover:block'>
                                 <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
                                     <p onClick={() => navigate('my-profile')} className='hover:text-primary cursor-pointer'>Profile</p>
                                     <p onClick={() => navigate('my-appointments')} className='hover:text-primary cursor-pointer'>Bookings</p>
