@@ -149,7 +149,7 @@ export const coaches = [
         speciality: 'All-Round Coach',
         degree: 'Professional Coach Certification',
         experience: '4 Years',
-        about: 'James focuses on elite-level preparation, including video analysis, physical conditioning, and tactical planning for tournament success.',
+        about: 'James helps players develop balanced games, combining spin variation, speed, and adaptability for versatile competition play.',
         fees: 50,
         address: {
             line1: '57th Cross, Richmond',
@@ -163,7 +163,7 @@ export const coaches = [
         speciality: 'Tactical Coach',
         degree: 'ITTF Foundation Coach',
         experience: '4 Years',
-        about: 'Li helps players develop balanced games, combining spin variation, speed, and adaptability for versatile competition play.',
+        about: 'Li focuses on elite-level preparation, including video analysis, physical conditioning, and tactical planning for tournament success.',
         fees: 50,
         address: {
             line1: '57th Cross, Richmond',
@@ -177,7 +177,7 @@ export const coaches = [
         speciality: 'Youth Coach',
         degree: 'Professional Experience',
         experience: '3 Years',
-        about: 'Elena coaches advanced women players, focusing on precision, endurance, and strategic doubles play in high-stakes environments.',
+        about: 'Elena specializes in introducing kids and teens to the sport, building fun fundamentals while fostering a love for competitive table tennis.',
         fees: 60,
         address: {
             line1: '27th Cross, Richmond',
@@ -205,7 +205,7 @@ export const coaches = [
         speciality: 'Defensive Coach',
         degree: 'Coach Level 1',
         experience: '1 Years',
-        about: 'Ilya specializes in introducing kids and teens to the sport, building fun fundamentals while fostering a love for competitive table tennis.',
+        about: 'Ilya coaches advanced defensive players, focusing on precision, endurance, and strategic doubles play in high-stakes environments.',
         fees: 30,
         address: {
             line1: '37th Cross, Richmond',
@@ -233,7 +233,7 @@ export const coaches = [
         speciality: 'All-Round Coach',
         degree: 'Advanced Coach',
         experience: '4 Years',
-        about: 'Freya emphasizes game intelligence, serve variation, and opponent analysis to give players a strategic edge in matches.',
+        about: 'Freya promotes inclusive training, helping players of all levels improve consistency, confidence, and enjoyment in the sport.',
         fees: 50,
         address: {
             line1: '57th Cross, Richmond',
@@ -247,7 +247,7 @@ export const coaches = [
         speciality: 'Tactical Coach',
         degree: 'Elite Certification',
         experience: '4 Years',
-        about: 'Ysabella works with aspiring pros, refining technique, mental resilience, and competition mindset for international events.',
+        about: 'Ysabella emphasizes game intelligence, serve variation, and opponent analysis to give players a strategic edge in matches.',
         fees: 50,
         address: {
             line1: '57th Cross, Richmond',
@@ -261,7 +261,7 @@ export const coaches = [
         speciality: 'Youth Coach',
         degree: 'Professional Coach',
         experience: '3 Years',
-        about: 'Yyveklean focuses on power generation, spin control, and match fitness for women competing at regional and national levels.',
+        about: 'Yyveklean focuses on power generation, spin control, and match fitness for aspiring youth competing at regional and national levels.',
         fees: 60,
         address: {
             line1: '27th Cross, Richmond',
@@ -275,7 +275,7 @@ export const coaches = [
         speciality: 'Elite Coach',
         degree: 'Certified Coach',
         experience: '4 Years',
-        about: 'Jason Lee promotes inclusive training, helping players of all levels improve consistency, confidence, and enjoyment in the sport.',
+        about: 'Jason Lee works with aspiring pros, refining technique, mental resilience, and competition mindset for international events.',
         fees: 50,
         address: {
             line1: '17th Cross, Richmond',

@@ -1,19 +1,29 @@
-import React, { useContext } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useContext, useEffect, useState } from 'react'
 import { AppContext } from '../context/AppContext'
+import { useNavigate } from 'react-router-dom'
 
-const TopCoaches = () => {
+const RelatedCoaches = ({ speciality, coachId }) => {
 
-    const navigate = useNavigate();
-    const { coaches } = useContext(AppContext);
+    const { coaches } = useContext(AppContext)
+    const navigate = useNavigate()
+
+    const [relCoach, setRelCoaches] = useState([])
+
+    useEffect(() => {
+        if (coaches.length > 0 && speciality) {
+            const coachData = coaches.filter((coach) => coach.speciality === speciality && coach._id !== coachId)
+            setRelCoaches(coachData)
+        }
+
+    }, [coaches, speciality, coachId])
 
 
     return (
         <div className='flex flex-col items-center gap-4 my-16 text-gray-900 md:mx-10'>
-            <h1 className='text-3xl font-medium'>Our Coaches</h1>
-            <p className='sm:w-1/3 text-center text-sm'>Meet our team of expert coaches. Find the one for you.</p>
+            <h1 className='text-3xl font-medium'>Similar Coaches</h1>
+            <p className='sm:w-1/3 text-center text-sm'>We found some other coaches with similar skills. Check them out.</p>
             <div className='w-full grid grid-cols-auto gap-4 pt-5 gap-y-6 px-3 sm:px-0'>
-                {coaches.slice(0, 15).map((item, index) => (
+                {relCoach.slice(0, 5).map((item, index) => (
                     <div onClick={() => { navigate(`/appointment/${item._id}`); scrollTo(0, 0) }} className='border border-alt border-opacity-45 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500' key={index}>
                         <img className='bg-red-50' src={item.image} alt={item.name} />
                         <div className='p-4'>
@@ -32,4 +42,4 @@ const TopCoaches = () => {
     )
 }
 
-export default TopCoaches
+export default RelatedCoaches
