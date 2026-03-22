@@ -6,6 +6,7 @@ const Coaches = () => {
 
     const { speciality } = useParams()
     const [filterCoach, setFilterCoach] = useState([])
+    const [showFilter, setShowFilter] = useState(false)
     const navigate = useNavigate()
 
     console.log(speciality);
@@ -29,6 +30,7 @@ const Coaches = () => {
         <div>
             <p className='text-gray-800'>Browse through the coaches' specialities:</p>
             <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
+                <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`} onClick={() => setShowFilter(prev => !prev)}>Filters</button>
                 <div className='flex flex-col gap-2 text-sm text-gray-800'>
                     <p onClick={() => speciality === 'Youth Coach' ? navigate('/coaches') : navigate('/coaches/Youth Coach')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-secondary border-opacity-20 rounded transition-all cursor-pointer ${speciality === "Youth Coach" ? "bg-secondary bg-opacity-80 border-opacity-80 text-white font-medium" : ""}`}>Youth Coach</p>
                     <p onClick={() => speciality === 'Elite Coach' ? navigate('/coaches') : navigate('/coaches/Elite Coach')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-secondary border-opacity-20 rounded transition-all cursor-pointer ${speciality === "Elite Coach" ? "bg-secondary bg-opacity-80 border-opacity-80 text-white font-medium" : ""}`}>Elite Coach</p>
