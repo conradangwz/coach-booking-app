@@ -34,8 +34,8 @@ const Navbar = () => {
                 {
                     token
                         ? <div className='flex items-center gap-2 cursor-pointer group relative'>
-                            <img onClick={() => setShowMenu(!showMenu)} className='w-14 rounded-full' src={assets.profile_pic} alt="Profile" />
-                            <img onClick={() => setShowMenu(!showMenu)} className='w-4' src={assets.dropdown_icon} alt="Menu" />
+                            <img className='w-11 rounded-full' src={assets.profile_pic} alt="Profile" />
+                            <img className='w-4' src={assets.dropdown_icon} alt="Menu" />
                             <div className='absolute top-12 right-0 pt-14 text-base font-medium text-secondary z-20 hidden group-hover:block'>
                                 <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
                                     <p onClick={() => navigate('my-profile')} className='hover:text-primary cursor-pointer'>Profile</p>
