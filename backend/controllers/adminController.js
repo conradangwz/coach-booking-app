@@ -53,9 +53,21 @@ const addCoach = async (req, res) => {
 
     } catch (error) {
         console.log(error)
-        res.json({ success: false, message: "Error adding coach" })
+        res.json({ success: false, message: error.message })
     }
 
 }
 
-export { addCoach }
+//API for admin login
+const loginAdmin = async (req, res) => {
+    try {
+
+
+    } catch (error) {
+        console.log(error)
+        res.json({ success: false, message: error.message })
+    }
+}
+
+
+export { addCoach, loginAdmin }
