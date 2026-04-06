@@ -34,9 +34,9 @@ const coachSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    availabile: {
+    available: {
         type: Boolean,
-        required: true
+        default: true
     },
     fee: {
         type: Number,

@@ -2,6 +2,7 @@ import validator from 'validator'
 import bycrypt from 'bcrypt'
 import { v2 as cloudinary } from 'cloudinary'
 import coachModel from '../models/coachModel.js'
+import jwt from 'jsonwebtoken'
 
 // API for adding coach
 const addCoach = async (req, res) => {
@@ -61,6 +62,14 @@ const addCoach = async (req, res) => {
 //API for admin login
 const loginAdmin = async (req, res) => {
     try {
+        const { email, password } = req.body
+
+        if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD) {
+            const token = jwt.sign(email + password, process.env.JWT_SECRET)
+            res.json({ success: true, message: "Login successful", token })
+        } else {
+            res.json({ success: false, message: "Invalid credentials" })
+        }
 
 
     } catch (error) {
